@@ -10,9 +10,10 @@
         "https://jairofernandez.github.io/AlMundoFrontend/favicon.ico",
         "https://jairofernandez.github.io/AlMundoFrontend/index.html",
         "https://jairofernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://jairofernandez.github.io/AlMundoFrontend/main.0e16f1cbb7ab991e0344.bundle.js",
+        "https://jairofernandez.github.io/AlMundoFrontend/main.09f9d477d96779e18942.bundle.js",
         "https://jairofernandez.github.io/AlMundoFrontend/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
-        "https://jairofernandez.github.io/AlMundoFrontend/styles.ac89bfdd6de82636b768.bundle.css"
+        "https://jairofernandez.github.io/AlMundoFrontend/scripts.968f55bfb751cd0febb2.bundle.js",
+        "https://jairofernandez.github.io/AlMundoFrontend/styles.ee0cc92ed9fb462a5b45.bundle.css"
       ],
       "patterns": []
     },
@@ -27,10 +28,11 @@
   "dataGroups": [],
   "hashTable": {
     "https://jairofernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "https://jairofernandez.github.io/AlMundoFrontend/main.0e16f1cbb7ab991e0344.bundle.js": "4388587f250b62ff0d90bd57a2f7a7c0b50cc066",
+    "https://jairofernandez.github.io/AlMundoFrontend/main.09f9d477d96779e18942.bundle.js": "ad6dd819a41c022088903cda25a5c40a22ca87a1",
     "https://jairofernandez.github.io/AlMundoFrontend/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
-    "https://jairofernandez.github.io/AlMundoFrontend/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://jairofernandez.github.io/AlMundoFrontend/scripts.968f55bfb751cd0febb2.bundle.js": "2c04185c17b4f24d012c77669afb0db42dbea1f2",
+    "https://jairofernandez.github.io/AlMundoFrontend/styles.ee0cc92ed9fb462a5b45.bundle.css": "fa53a42f17d7dcde6646fedde43178756bc6f4a2",
     "https://jairofernandez.github.io/AlMundoFrontend/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://jairofernandez.github.io/AlMundoFrontend/index.html": "cb00487683379fe6c0caeeaf77c8c7b8dc2c3dc3"
+    "https://jairofernandez.github.io/AlMundoFrontend/index.html": "b3cf44418c77f18ff49516b51d80e58dc697c7f1"
   }
 }
