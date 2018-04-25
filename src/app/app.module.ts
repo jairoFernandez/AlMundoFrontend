@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -11,16 +11,25 @@ import { HotelsService } from './services/hotels/hotels.service';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CardHotelComponent } from './components/card-hotel/card-hotel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    PageNotFoundComponent,
+    CardHotelComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
-    HttpClientModule
+    HttpClientModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [HotelsService],
   bootstrap: [AppComponent]

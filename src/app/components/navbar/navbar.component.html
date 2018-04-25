@@ -1,0 +1,33 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark primary-color-dark scrolling-navbar ie-nav" [containerInside]="false">
+  <logo>
+    <img src="{{urlLogo}}" />
+  </logo>
+  <links style="margin-left: 60px;">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active waves-light" mdbWavesEffect>       
+        <a class="nav-link" [routerLink]="['/hotels']">Inicio
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>      
+    </ul>
+    <ul class="navbar-nav nav-flex-icons">
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+      <li class="nav-item waves-light" mdbWavesEffect>
+        <a class="nav-link">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
+
+

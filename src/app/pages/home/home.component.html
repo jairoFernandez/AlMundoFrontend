@@ -1,1 +1,8 @@
-{{hotels|json}}
+<div class="row">
+    <div class="col-md-4">
+        buscador
+    </div>
+    <div class="col-md-8">
+        <app-card-hotel [hotel]="hotel" *ngFor="let hotel of hotels"></app-card-hotel>
+    </div>
+</div>
