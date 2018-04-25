@@ -1,0 +1,36 @@
+{
+  "configVersion": 1,
+  "index": "https://jairoFernandez.github.io/AlMundoFrontend/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://jairoFernandez.github.io/AlMundoFrontend/favicon.ico",
+        "https://jairoFernandez.github.io/AlMundoFrontend/index.html",
+        "https://jairoFernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js",
+        "https://jairoFernandez.github.io/AlMundoFrontend/main.af8654d9f271e24f3c15.bundle.js",
+        "https://jairoFernandez.github.io/AlMundoFrontend/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
+        "https://jairoFernandez.github.io/AlMundoFrontend/styles.ac89bfdd6de82636b768.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://jairoFernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "https://jairoFernandez.github.io/AlMundoFrontend/main.af8654d9f271e24f3c15.bundle.js": "e6bbb7267f29e9a3a4aadb48c75e8c4449d4b6fd",
+    "https://jairoFernandez.github.io/AlMundoFrontend/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
+    "https://jairoFernandez.github.io/AlMundoFrontend/styles.ac89bfdd6de82636b768.bundle.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+    "https://jairoFernandez.github.io/AlMundoFrontend/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "https://jairoFernandez.github.io/AlMundoFrontend/index.html": "cd0acc28e98dbf70f48c63ef334b31549f1b674c"
+  }
+}
