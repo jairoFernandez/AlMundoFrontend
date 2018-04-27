@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-$primary-color-dark: #0d47a1;
+$primary-color-dark: #083170;
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 100%;
+    }
+}

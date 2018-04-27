@@ -11,10 +11,12 @@ import { HotelsService } from './services/hotels/hotels.service';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { MDBBootstrapModule, CollapseModule, CollapseDirective } from 'angular-bootstrap-md';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CardHotelComponent } from './components/card-hotel/card-hotel.component';
+import { DefaultUrlDirective } from './directive/default-url.directive';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -22,16 +24,20 @@ import { CardHotelComponent } from './components/card-hotel/card-hotel.component
     HomeComponent,
     NavbarComponent,
     PageNotFoundComponent,
-    CardHotelComponent
+    CardHotelComponent,
+    DefaultUrlDirective,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     //ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    CollapseModule
   ],
   providers: [HotelsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }

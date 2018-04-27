@@ -1,9 +1,10 @@
 <div class="card">
     <div class="card-body">
       <div class="row">
-          <div class="col-md-3 image-hotel">
+          <div class="col-lg-4 image-hotel">
               <div class="view hm-white-slight waves-light" mdbWavesEffect>
-                  <img src="{{route + '/images/hotels/' + hotel.image}}" class="img-fluid" alt="Card image with a tree in a middle of a lake.">
+                    <img class="img-fluid" [src]="routeImage" 
+                        (error)="updateUrl($event)" />
                   <a>
                       <div class="mask"></div>
                   </a>
@@ -11,17 +12,20 @@
           </div>
           <div class="col-lg-8 description-hotel">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 info-hotel">
                     <h4 class="card-title">{{hotel.name}}</h4>
-                    <p class="card-text">{{hotel.stars}} stars</p>
+                    <div>
+                        <img *ngFor="let item of stars" 
+                            class="star" src="{{route + 'icons/filters/star.svg'}}" />
+                    </div>
                     <div *ngFor="let amenity of hotel.amenities" class="hotel-amenity">
-                      <img src="{{route + 'icons/amenities/' + amenity + '.svg'}}" width="25px" />
+                      <img src="{{route + 'icons/amenities/' + amenity + '.svg'}}" />
                     </div>  
                 </div>
-                <div class="col-md-4">
-                  {{'Precio por habitación noche'}}
-                  {{hotel.price}}
-                  <a class="btn btn-primary waves-light" mdbWavesEffect>Ver Hotel</a>
+                <div class="col-md-4 price-hotel">
+                  <p style="word-break: break-word; margin: 5%;">Precio por noche por habitación</p>
+                  <div><p style="font-size: 19px !important; color: #e17800;">ARS <span class="price">{{price}}</span></p></div>
+                  <a class="btn btn-primary waves-light button-hotel" mdbWavesEffect>Ver hotel</a>
                 </div>
             </div>  
           </div>
