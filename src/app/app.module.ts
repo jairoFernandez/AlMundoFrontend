@@ -18,6 +18,8 @@ import { CardHotelComponent } from './components/card-hotel/card-hotel.component
 import { DefaultUrlDirective } from './directive/default-url.directive';
 import { SearchComponent } from './components/search/search.component';
 
+import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,8 @@ import { SearchComponent } from './components/search/search.component';
     //ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
-    CollapseModule
+    CollapseModule,
+    NgHttpLoaderModule
   ],
   providers: [HotelsService],
   bootstrap: [AppComponent],
