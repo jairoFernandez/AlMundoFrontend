@@ -4,29 +4,36 @@
         <hr>
         <div style="color: deepskyblue;">
             <img style="width: 20px; margin-right: 10px;" src="{{routeSearch}}"/>
-            Nombre de hotel            
-            <a style="float: right;" (click)="search.toggle()" mdbwaveseffect="mdbWavesEffect"><i class="fa fa-angle-down"></i></a>           
+            Nombre de hotel
+            <a style="float: right;" (click)="openSearchHotel()" mdbwaveseffect="mdbWavesEffect">
+                <i class="fa fa-angle-down"></i>
+            </a>
         </div>
-        <div class="" aria-expanded="true" [mdbCollapse]="isCollapsed" #search="bs-collapse">
-          <br/> 
-          <input type="text" placeholder="Ingrese el nombre del hotel" class="input-search" />
-          <button type="button" class="btn btn-primary waves-light" mdbWavesEffect>Aceptar</button>
+        <div *ngIf="!isCollapsedSearchHotel">
+            <br/>
+            <input [(ngModel)]="hotelName" (change)="UpdateNameHotel($event)" placeholder="Ingrese el nombre del hotel" class="input-search"/>
+            <button type="button" (click)="Search()" class="btn btn-primary waves-light" mdbwaveseffect="mdbWavesEffect">Aceptar</button>
         </div>
         <hr>
-
         <div style="color: deepskyblue;">
             <img style="width: 20px; margin-right: 10px;" src="{{routeStar}}"/>
-            Estrellas           
-            <a style="float: right;" (click)="stars.toggle()" mdbwaveseffect="mdbWavesEffect"><i class="fa fa-angle-down"></i></a>           
+            Estrellas
+            <a style="float: right;" (click)="openSearchStar()" mdbwaveseffect="mdbWavesEffect">
+                <i class="fa fa-angle-down"></i>
+            </a>
         </div>
-        <div class="" aria-expanded="true" [mdbCollapse]="isCollapsed" #stars="bs-collapse">
-            <br/> 
-            <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Todas las estrellas</label>
+        <div *ngIf="!isCollapsedSearchStar">
+            <br/>            
+            <div *ngFor="let star of stars" style="display: flex;">    
+                            
+                <input [checked]="star.value == 0" type="checkbox" (change)="Update($event, star.value)">
+                <label for="cbox" *ngIf="star.value != 0">
+                    <app-star [quantity]="star.value"></app-star>
+                </label> 
+                <label for="cbox" *ngIf="star.value == 0" style="margin-top: -5px !important">
+                    <strong>Todas las estrellas</strong>
+                </label>                   
+            </div>
         </div>
     </div>
-</div>
-
-<div *ngFor="let star of stars">
-  
-    <h1>Pruebas</h1>
 </div>

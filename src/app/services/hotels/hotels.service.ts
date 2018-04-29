@@ -11,8 +11,8 @@ export class HotelsService {
     this.route = environment.api + "api/Hotel"
   }
 
-  getAll(){
-    return this.http.get<Hotel[]>(this.route);
+  getAll(query: string = null){
+    return this.http.get<Hotel[]>(this.route + '?' + query);
   }
 
 }

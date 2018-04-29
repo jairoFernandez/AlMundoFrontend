@@ -19,6 +19,7 @@ import { DefaultUrlDirective } from './directive/default-url.directive';
 import { SearchComponent } from './components/search/search.component';
 
 import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
+import { StarComponent } from './components/star/star.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
     PageNotFoundComponent,
     CardHotelComponent,
     DefaultUrlDirective,
-    SearchComponent
+    SearchComponent,
+    StarComponent
   ],
   imports: [
     BrowserModule,
