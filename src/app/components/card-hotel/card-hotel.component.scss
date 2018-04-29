@@ -55,3 +55,63 @@
     background-color: #0e3475 !important;
     text-transform: none !important;
 }
+
+@media (max-width: 1000px) {
+    img{
+        width: 100%;
+    }
+
+    .col-md-6{
+        padding: 20px !important;
+        margin-right: 0px;
+        height: 150px !important;
+
+        .info-hotel{
+        }
+
+        h4{
+            font-size:  25px !important;
+            color: deepskyblue;
+            font-weight: bold;
+        }
+
+        .hotel-amenity{
+            img{
+                width: 25px !important;
+                margin-top: 5px;
+            }            
+        }
+    }
+    
+    .col-md-4{
+        flex: 0 0 100% !important;
+        max-width: 98% !important; 
+        margin-left: 5px;
+        border-left: 0px dashed lightgray;
+        border-top: 2px dashed gray !important;
+        text-align: center;
+        padding-top: 2%;
+
+        p{
+            font-size: 18px !important;
+        }
+
+        .price-hotel{
+            border-left: 0px solid white;            
+            text-align: center;
+            .price{
+                color:#e17800;
+                font-size: 50px !important;
+                font-weight: bold;
+            }
+        }        
+    }
+}
+
+@media (max-width: 500px) {
+    .btn-primary{
+        background-color: #0e3475 !important;
+        text-transform: none !important;
+        width: 90%;
+    }
+}

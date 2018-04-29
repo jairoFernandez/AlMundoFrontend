@@ -1,8 +1,10 @@
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 filter-search">
         <app-search (searchOutput)="Search($event)"></app-search>
     </div>
-    <div class="col-md-8">
+    <br />
+    <br />
+    <div class="col-md-8 hotel">
         <app-card-hotel [hotel]="hotel" *ngFor="let hotel of hotels"></app-card-hotel>
     </div>
 </div>
