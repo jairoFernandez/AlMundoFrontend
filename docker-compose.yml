@@ -1,0 +1,13 @@
+version: '2'
+services:
+    almundofront:
+      build: .
+      volumes:
+        - ${LOCAL_FOLDER}:/src
+      ports:
+        - '4200:4200'
+        - '49153:49153'
+        - '9876:9876'
+      entrypoint: /bin/sh
+      stdin_open: true
+      tty: true
