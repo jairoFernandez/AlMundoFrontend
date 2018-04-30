@@ -1,5 +1,5 @@
 import { Hotel } from './../../../models/hotel';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { environment } from '../../../environments/environment';
 
 @Component({
@@ -9,6 +9,8 @@ import { environment } from '../../../environments/environment';
 })
 export class CardHotelComponent implements OnInit {
   @Input()hotel: Hotel;
+  @Output()hotelDelete: EventEmitter<Hotel> = new EventEmitter<Hotel>();
+
   public route: string;
   stars: any[] = new Array<any>();
   routeImage: string;
@@ -26,11 +28,16 @@ export class CardHotelComponent implements OnInit {
     }
     this.routeImage = this.route + '/images/hotels/' + this.hotel.image;
     this.routeImageDefault = this.route + '/images/default.jpg';  
-    this.price = this.hotel.price;
+    var price = this.hotel.price != null ? this.hotel.price.toString() : "0";
+    this.price = parseInt(price);
   }
 
   updateUrl(event){
     this.routeImage = this.routeImageDefault;
+  }
+
+  Eliminar(){
+    this.hotelDelete.emit(this.hotel);
   }
 
 }

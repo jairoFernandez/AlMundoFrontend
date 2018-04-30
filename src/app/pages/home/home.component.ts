@@ -107,6 +107,13 @@ export class HomeComponent implements OnInit {
       alert("Cambios realizados con éxito");
     });
   }
+
+  Eliminar(event){
+    if(!confirm("Está seguro de eliminar?")) return false;
+    this.hotelService.delete(event._id).subscribe(()=>{
+      this.ObtainHotels();
+    });
+  }
 }
 
 export class FileImage{

@@ -22,4 +22,8 @@ export class HotelsService {
   create(hotel: any){
     return this.http.post<Hotel>(this.route, hotel);
   }
+
+  delete(id: string){
+    return this.http.delete(this.route + '/' + id);
+  }
 }

@@ -20,7 +20,9 @@
                     </div>
                     <div *ngFor="let amenity of hotel.amenities" class="hotel-amenity">
                       <img src="{{route + 'icons/amenities/' + amenity + '.svg'}}" />
-                    </div>  
+                    </div> 
+                    <br>
+                    <a class="btn btn-outline-danger btn-sm" (click)="Eliminar()"><i class="fa fa-trash-alt"></i> Eliminar</a> 
                 </div>
                 <div class="col-md-4 price-hotel">
                   <p style="word-break: break-word; margin: 5%;">Precio por noche por habitación</p>

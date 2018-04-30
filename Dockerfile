@@ -10,6 +10,7 @@ RUN apk update \
 
 #Angular CLI
 RUN npm install -g @angular/cli@1.7.4 -y
+RUN npm i -g angular-cli-ghpages -y
 
 RUN mkdir /src
 WORKDIR /src

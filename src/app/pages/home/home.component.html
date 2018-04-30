@@ -8,7 +8,7 @@
     <br />
     <br />
     <div class="col-md-8 hotel">
-        <app-card-hotel [hotel]="hotel" *ngFor="let hotel of hotels"></app-card-hotel>
+        <app-card-hotel [hotel]="hotel" (hotelDelete)="Eliminar($event)" *ngFor="let hotel of hotels"></app-card-hotel>
     </div>
 </div>
 
@@ -54,7 +54,7 @@
                         </form>
                 </div>
                 <div class="modal-footer">
-                        {{ hotelForm.status | json }}
+                        <!-- {{ hotelForm.status | json }} -->
                     <!-- [disabled]="!hotelForm.valid" <button type="button" class="btn btn-secondary btn-sm waves-light" data-dismiss="modal" (click)="demoBasic.hide()" mdbWavesEffect>Close</button>
                     <button type="button" class="btn btn-primary btn-sm waves-light" mdbWavesEffect>Save changes</button> -->
                 </div>
