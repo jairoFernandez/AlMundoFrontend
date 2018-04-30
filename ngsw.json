@@ -10,7 +10,7 @@
         "https://jairofernandez.github.io/AlMundoFrontend/favicon.ico",
         "https://jairofernandez.github.io/AlMundoFrontend/index.html",
         "https://jairofernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://jairofernandez.github.io/AlMundoFrontend/main.4fa319c44da4d91931e5.bundle.js",
+        "https://jairofernandez.github.io/AlMundoFrontend/main.f1ff46b1e1c64acb77d7.bundle.js",
         "https://jairofernandez.github.io/AlMundoFrontend/polyfills.194f3db5c95bb635c66b.bundle.js",
         "https://jairofernandez.github.io/AlMundoFrontend/scripts.968f55bfb751cd0febb2.bundle.js",
         "https://jairofernandez.github.io/AlMundoFrontend/styles.7bfcaa2629d2841029c6.bundle.css"
@@ -28,11 +28,11 @@
   "dataGroups": [],
   "hashTable": {
     "https://jairofernandez.github.io/AlMundoFrontend/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
-    "https://jairofernandez.github.io/AlMundoFrontend/main.4fa319c44da4d91931e5.bundle.js": "cc9ae91b63af61c47e7c53936ea6dc41d64aa721",
+    "https://jairofernandez.github.io/AlMundoFrontend/main.f1ff46b1e1c64acb77d7.bundle.js": "c02240a00217a7ce9ae1205668780efe81bb486a",
     "https://jairofernandez.github.io/AlMundoFrontend/polyfills.194f3db5c95bb635c66b.bundle.js": "1efb43b628f58146c7d7c98e11c9b496244802da",
     "https://jairofernandez.github.io/AlMundoFrontend/scripts.968f55bfb751cd0febb2.bundle.js": "2c04185c17b4f24d012c77669afb0db42dbea1f2",
     "https://jairofernandez.github.io/AlMundoFrontend/styles.7bfcaa2629d2841029c6.bundle.css": "83088eee03ab772067d465799a4172a348160faa",
     "https://jairofernandez.github.io/AlMundoFrontend/favicon.ico": "a56a0758e42ce0e2ec7c008d14da2429e07406a7",
-    "https://jairofernandez.github.io/AlMundoFrontend/index.html": "a3ab84a2d0ab7c2b54e9b67ce631aeff02054097"
+    "https://jairofernandez.github.io/AlMundoFrontend/index.html": "02bffce69b0a22ae7fc73639b43d8f23b027c4b5"
   }
 }
