@@ -1,0 +1,16 @@
+<div class="jumbotron" *ngIf="hotel">
+  <h1 class="h1-responsive">{{hotel.name}}</h1>
+  <p class="lead">
+    ARS <small style="font-weight: bold; font-size: 25px;">{{hotel.price}}</small>
+  </p>
+  <hr class="my-2">
+  <app-star [quantity]="hotel.stars"></app-star>
+  <div *ngFor="let amenity of hotel.amenities" style="display: inline-block;">
+      <img style="width: 30px; margin: 15px;" src="{{routeAmenity + amenity + '.svg'}}" />
+    </div> 
+</div>
+<!--
+  <img [src]="routeImage" 
+        (error)="updateUrl($event)" class="img-fluid">
+-->
+          

@@ -20,6 +20,8 @@ import { SearchComponent } from './components/search/search.component';
 
 import { NgHttpLoaderModule } from 'ng-http-loader/ng-http-loader.module';
 import { StarComponent } from './components/star/star.component';
+import { HotelComponent } from './pages/hotel/hotel.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { StarComponent } from './components/star/star.component';
     CardHotelComponent,
     DefaultUrlDirective,
     SearchComponent,
-    StarComponent
+    StarComponent,
+    HotelComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { StarComponent } from './components/star/star.component';
     HttpClientModule,
     MDBBootstrapModule.forRoot(),
     CollapseModule,
-    NgHttpLoaderModule
+    NgHttpLoaderModule,
+    FormsModule, ReactiveFormsModule
   ],
   providers: [HotelsService],
   bootstrap: [AppComponent],

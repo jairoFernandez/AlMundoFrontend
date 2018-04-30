@@ -15,4 +15,11 @@ export class HotelsService {
     return this.http.get<Hotel[]>(this.route + '?' + query);
   }
 
+  getById(id: string){
+    return this.http.get<Hotel>(this.route + '/' + id);
+  }
+
+  create(hotel: any){
+    return this.http.post<Hotel>(this.route, hotel);
+  }
 }

@@ -25,7 +25,7 @@
                 <div class="col-md-4 price-hotel">
                   <p style="word-break: break-word; margin: 5%;">Precio por noche por habitación</p>
                   <div><p style="font-size: 19px !important; color: #e17800;">ARS <span class="price">{{price}}</span></p></div>
-                  <a class="btn btn-primary waves-light button-hotel" mdbWavesEffect>Ver hotel</a>
+                  <a class="btn btn-primary waves-light button-hotel" [routerLink]="['/hotel-detail/:id', {id:hotel._id}]" mdbWavesEffect>Ver hotel</a>
                 </div>
             </div>  
           </div>

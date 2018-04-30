@@ -26,7 +26,7 @@ export class CardHotelComponent implements OnInit {
     }
     this.routeImage = this.route + '/images/hotels/' + this.hotel.image;
     this.routeImageDefault = this.route + '/images/default.jpg';  
-    this.price = parseInt(this.hotel.price.toString());
+    this.price = this.hotel.price;
   }
 
   updateUrl(event){

@@ -15,7 +15,9 @@ cp .env.dist .env # copiar archivo environment propio
   npm run start
 ```
 
-## Deploy iin github pages
+En el navegador [http://localhost:4200](http://localhost:4200)
+
+## Deploy in github pages
 ```sh
     npm run deploy #Este corre el deploy en modo prod y aot, y finalmente sube todo a github pages
 ```
